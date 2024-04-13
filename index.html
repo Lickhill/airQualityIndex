@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Air Pollution Indicator</title>
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&family=Montserrat:wght@700&family=Poppins&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="root">
+			<h1 class="heading">Air Pollution Indicator</h1>
+			<div class="location-container">
+				<h2 class="sub-heading">Your Location :</h2>
+				<label for="error-msg" style="color: red"></label><br />
+				<input
+					type="text"
+					name="city"
+					placeholder="City"
+					id="city"
+					class="loc-input"
+				/>
+
+				<input
+					type="text"
+					name="state"
+					placeholder="State"
+					id="state"
+					class="loc-input"
+				/>
+				<button class="search-btn">Search</button>
+			</div>
+			<div class="air-info">
+				<h2 class="sub-heading">Air Quality Index :</h2>
+				<span class="air-quality">...</span>
+				<span class="arr">&nbsp;&rarr;&nbsp;</span>
+				<span class="air-quality-status">...</span>
+				<div class="component-container">
+					<h2 class="sub-heading">
+						Concentration of pollutants in air :
+					</h2>
+
+					<!-- Pollutant information will be dynamically populated here -->
+				</div>
+			</div>
+			<footer>Project By Anurag Mondal</footer>
+		</div>
+		<script src="./script.js" defer></script>
+	</body>
+</html>
